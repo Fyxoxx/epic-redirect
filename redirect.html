@@ -3,15 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Opening Epic Games Launcher...</title>
+  <style>
+    body {
+      background: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+      color: white;
+    }
+    p {
+      font-size: 20px;
+      opacity: 0.8;
+    }
+  </style>
   <script>
     const slug = new URLSearchParams(window.location.search).get('slug');
     if (slug) {
       window.location.href = "com.epicgames.launcher://store/p/" + slug;
-      setTimeout(() => window.close(), 1000);
     }
   </script>
 </head>
 <body>
-  <p>Opening Epic Games Launcher...</p>
+  <p>✅ Launching Epic Games... You can close this tab.</p>
 </body>
 </html>
