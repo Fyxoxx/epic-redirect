@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Opening Epic Games Launcher...</title>
+  <script>
+    const slug = new URLSearchParams(window.location.search).get('slug');
+    if (slug) {
+      window.location.href = "com.epicgames.launcher://store/p/" + slug;
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to Epic Games Launcher...</p>
+</body>
+</html>
